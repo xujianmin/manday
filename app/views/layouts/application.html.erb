@@ -11,7 +11,7 @@
 
     <%= yield :head %>
 
-    <script src="/falcon/assets/js/config.js"></script>
+    <script src="/falcon/assets/js/config.js" data-turbo-track="reload"></script>
     <script src="/falcon/vendors/simplebar/simplebar.min.js"></script>
 
     <link rel="manifest" href="/manifest.json">
@@ -24,10 +24,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
     <link href="/falcon/vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link href="/falcon/assets/css/theme-rtl.css" rel="stylesheet" id="style-rtl" data-turbo-track="reload">
-    <link href="/falcon/assets/css/theme.css" rel="stylesheet" id="style-default" data-turbo-track="reload">
-    <link href="/falcon/assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl" data-turbo-track="reload">
-    <link href="/falcon/assets/css/user.css" rel="stylesheet" id="user-style-default" data-turbo-track="reload">
+    
+    <link href="/falcon/assets/css/theme-rtl.css" rel="stylesheet" id="style-rtl">
+    <link href="/falcon/assets/css/theme.css" rel="stylesheet" id="style-default">
+    <link href="/falcon/assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+    <link href="/falcon/assets/css/user.css" rel="stylesheet" id="user-style-default">
     <script>
       var isRTL = JSON.parse(localStorage.getItem('isRTL'));
       if (isRTL) {
@@ -118,7 +119,7 @@
         </div>
       </div>
     </main>
-
+    
     <!-- Falcon JS files -->
     <script src="/falcon/vendors/popper/popper.min.js"></script>
     <script src="/falcon/vendors/bootstrap/bootstrap.min.js"></script>
@@ -129,6 +130,6 @@
     <script src="/falcon/vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="/falcon/vendors/list.js/list.min.js"></script>
-    <script src="/falcon/assets/js/theme.js"></script>
+    <script type="module" src="/falcon/assets/js/theme.js"></script>
   </body>
 </html>

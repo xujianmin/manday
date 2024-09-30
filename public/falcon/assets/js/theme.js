@@ -24,7 +24,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 var docReady = function docReady(fn) {
   // see if DOM is already available
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fn);
+    // document.addEventListener('DOMContentLoaded', fn);
+    document.addEventListener('turbo:load', fn);
   } else {
     setTimeout(fn, 1);
   }
