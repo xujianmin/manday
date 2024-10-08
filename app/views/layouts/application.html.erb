@@ -128,8 +128,11 @@
     <script src="/falcon/vendors/echarts/echarts.min.js"></script>
     <script src="/falcon/vendors/fontawesome/all.min.js"></script>
     <script src="/falcon/vendors/lodash/lodash.min.js"></script>
+    <!-- 采用国内的cdn -->
     <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="/falcon/vendors/list.js/list.min.js"></script>
+    <!-- 使用 module 可以正常使用 js 的效果，但是会有以下报错 -->
+    <!-- Uncaught TypeError: Failed to resolve module specifier "theme.js". Relative references must start with either "/", "./", or "../". -->
     <script type="module" src="/falcon/assets/js/theme.js"></script>
   </body>
 </html>

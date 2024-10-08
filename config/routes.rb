@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  resources :jobs
+
+  # 测试 falcon 主题整合：starter基本页面、dashboard图表等。。
   get "falcon/starter"
+  get "falcon/dashboard"
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
